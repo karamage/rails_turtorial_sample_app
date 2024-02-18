@@ -8,3 +8,4 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+    errors:
