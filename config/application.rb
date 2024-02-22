@@ -12,8 +12,10 @@ module SampleApp
     config.load_defaults 7.0
     config.active_storage.variant_processor = :mini_magick
 
-    config.generators do |g| g.test_framework :rspec,
-                                              fixtures: false, view_specs: false, helper_specs: false, routing_specs: false
+    config.generators do |g|
+      g.test_framework :rspec,
+               fixtures: false, view_specs: false, helper_specs: false, routing_specs: false
+      g.factory_bot false
     end
   end
 end
